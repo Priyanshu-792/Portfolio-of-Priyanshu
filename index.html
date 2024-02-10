@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio of Mr Priyanshu Sharma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="images/ps.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <script
+      src="https://kit.fontawesome.com/644324a016.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/animated logo.avif" style="border-radius: 100px;" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#Certifications"> Certificates</a></li>
+            <li><a href="#portfolio"> My works</a></li>
+            <li><a href="#contact"> Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+        
+          <h1>
+            Hi, I am <span>Priyanshu Sharma</span><br />
+           BTech CSE 4th Year Student.
+          </h1>
+          
+        </div>
+      </div>
+    </div>
+    <!-- ---------about----------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/myself.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p style="font-size:larger;">
+              I am Priyanshu Sharma, a Computer Science Engineering (CSE) student pursuing a Bachelor of Technology (B.Tech) degree. In addition to my academic pursuits, I am also a passionate web developer. I possess a strong affinity for creating websites and continuously strive to expand my knowledge by learning about new and emerging technologies in the field. I have worked on many interesting websites which you can go through as follows.
+              <br>
+              Furthermore, I am an avid competitive programmer, achieving a 4-star rating on HackerRank and a 2.5-star rating on LeetCode. This reflects my dedication to problem-solving and honing my coding skills in a competitive environment.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />HTML, CSS, JAVASCRIPT, REACT
+                  JS, PHP
+                </li>
+                <li>
+                  <span>Competitive Programming</span><br />JAVA, C, C++ (DSA)
+                </li>
+                <li><span>Open source Contributor</span><br />GIT, GITHUB</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />WEB DESIGNING AND FRONTEND DEVELOPMENT
+                  AT ACTIBEWEB
+                </li>
+                <li>
+                  <span>2022</span><br />OPEN SOURCE CONTRIBUTOR AS WELL AS
+                  MENTOR IN HACKTOBERFEST
+                </li>
+                <li>
+                  <span>2021</span><br />OPEN SOURCE CONTRIBUTOR IN
+                  HACKTOBERFEST
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>10th marks (ICSE)</span><br /><p style="font-size: 20px;">overall percentage: 84.6%</p>
+                </li>
+                <li>
+                  <span>12th marks (CBSE)</span><br /><p style="font-size: 20px;">overall percentage: 82.6%</p>
+                </li>
+                <li><span>B.Tech (MAKAUT)</span><br /><p style="font-size: 20px;"></p>overall CGPA: 9.2</li></p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------services------------- -->
+
+
+
+
+
+    <div id="Certifications">
+      <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="images/hackerrnak basic problem.png" alt="" />
+
+            <div class="layer">
+              <h3>Problem Solving (Basic) Certificate
+              </h3>
+              <p>
+                It is certificate of basic problem solving in coding at hackerrank!
+              </p>
+                <a href="https://www.hackerrank.com/certificates/d1fd0655d443" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+             
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/java.png" alt="" />
+            <div class="layer">
+              <h3>Java Programming</h3>
+              <p>Java Programming: Solving Problems with Software certification!</p>
+              <a
+                href="https://www.coursera.org/account/accomplishments/verify/SXBKWYQFVXCQ"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/python.png" alt="" />
+            <div class="layer">
+              <h3>Python Certifications</h3>
+              <p>
+               It is a coursera certificate of Programming for Everybody (Getting Started with Python)!
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/VPV375C4DANZ" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+
+  
+   
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ---------------portfolio------------------>
+
+
+    <div id="portfolio" style="padding-top: 120px;">
+      <div class="container">
+        <h1 class="sub-title">My works</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="images/realestate.png" alt="" />
+
+            <div class="layer">
+              <h3>Real estate website</h3>
+              <p>
+                It is a kind of realestate website which shows properties and
+                their prices!
+              </p>
+                <a href="https://65140f1651d2c90a8ae5749d--glowing-jelly-453c05.netlify.app/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+             
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/kfc.png" alt="" />
+            <div class="layer">
+              <h3>Franchise website</h3>
+              <p>It is a KFC franchise demo website!</p>
+              <a
+                href="https://celebrated-lamington-4db25e.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+
+          <div class="work">
+            <img src="images/cement.png" alt="" />
+            <div class="layer">
+              <h3>Cement Traders website</h3>
+              <p>
+                It is a online website for ordering cement of any xyz company
+                cement through online!
+              </p>
+              <a href="https://65193d7cfe7ae23774f1340b--glistening-snickerdoodle-a9ef85.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/ayurveda.png" alt="" />
+            <div class="layer">
+              <h3>Ayurveda Treatment website</h3>
+              <p>
+                It is a website that advertises herbal and natural medical
+                products!
+              </p>
+              <a
+                href="https://650f35465b79915f0852229e--prismatic-meerkat-e5f97d.netlify.app/#"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/music.png" alt="" />
+            <div class="layer">
+              <h3>Music Website</h3>
+              <p>It is a spotify clone website to enjoy songs!</p>
+              <a href="https://celadon-faun-45bcf6.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/weather.png" alt="" />
+            <div class="layer">
+              <h3>Weather Forecast website</h3>
+              <p>
+                This is a website that displays the weather conditions for all
+                locations in India!
+              </p>
+              <a
+                href="https://sparkling-panda-7857c3.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/tic tac.png" alt="" />
+            <div class="layer">
+              <h3>Tic Tac Toe game</h3>
+              <p>
+                Its a simple code for playing tic tac toe game against computer
+                using java!
+              </p>
+              <a
+                href="https://github.com/Priyanshu-792/Tic-tac-toe-"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://leetcode.com/priyanshusharma72002/" target="_blank" class="btn">See more</a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- ----------------contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              
+           
+            <a href="mailto:priyanshusharma72002@gmail.com" >
+              <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+              priyanshusharma72002@gmail.com
+            </a> 
+            </p>
+            <p><i class="fa-solid fa-phone"></i>7001595836</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/priyanshu_792/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Priyanshu-792" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+             
+              <a
+                href="https://www.linkedin.com/in/priyanshu-sharma-552104239/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            Please leave a comment or any message you want to convey to me via this message box!
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+         Made by Priyanshu Sharma 😊
+         <i class="fa-solid fa-laptop-mobile" ></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // -----------about section starts here----------
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // -----------about section ends here-----------
+    </script>
+
+    <script>
+      var sidemenu = document.getELementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzif_lVHcE9tv-FaRQQzNwZCWxcp1ANEKLD7i_xzRd4mOzHqmE_qbdlINok3u2CXSJE/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+  </body>
+</html>
