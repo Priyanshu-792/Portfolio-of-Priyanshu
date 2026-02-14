@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio of Mr Priyanshu Sharma</title>
+    <title>DevSphere - Web & App Development Team</title>
     <link rel="stylesheet" href="style.css" />
     <link href="images/ps.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/644324a016.js"
       crossorigin="anonymous"
@@ -17,399 +19,522 @@
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "kzfg0anz27");
-</script>
+    </script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
+    <!-- Splash / Logo Hologram Animation -->
+    <div class="splash" id="splash">
+      <div class="splash-glow"></div>
+      <img src="images/DevSphere logo.png" alt="DevSphere" class="splash-logo" />
+      <span class="splash-text">DevSphere</span>
+    </div>
+
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle background -->
+    <div class="particles" id="particles"></div>
+
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/animated logo.avif" style="border-radius: 100px;" alt="" class="logo" />
+          <div class="nav-logo">
+            <img src="images/DevSphere logo.png" alt="DevSphere" class="logo" />
+            <span class="logo-text">DevSphere</span>
+          </div>
           <ul id="sidemenu">
-            <li><a href="#"> Home</a></li>
-            <li><a href="#about"> About</a></li>
-            <li><a href="#Certifications"> Certificates</a></li>
-            <li><a href="#portfolio"> My works</a></li>
-            <li><a href="#contact"> Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>WEB DEVELOPER</p>
-        
+          <div class="badge">
+            <span class="pulse-dot"></span>
+            Available for Projects
+          </div>
           <h1>
-            Hi, I am <span>Priyanshu Sharma</span><br />
-           BTech CSE 4th Year Student.
+            We Build <span class="gradient-text">Digital</span><br />
+            <span class="gradient-text">Experiences</span> That Matter.
           </h1>
-          
+          <p class="header-sub">
+            A team of passionate developers, designers & creators crafting
+            modern websites, powerful apps, and compelling digital content.
+          </p>
+          <div class="header-cta">
+            <a href="#contact" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+          </div>
+          <div class="header-stats">
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Websites Delivered</span>
+            </div>
+            <!-- <div class="stat">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div> -->
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Freelance Team Members</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- ---------about----------- -->
 
+    <!-- ---------about us----------- -->
     <div id="about">
       <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who We Are</span>
+          <h1 class="sub-title">About Us</h1>
+        </div>
         <div class="row">
           <div class="about-col-1">
-            <img src="images/myself.png" alt="" />
+            <div class="about-image-wrapper">
+              <img src="images/DevSphere logo.png" alt="DevSphere Team" />
+              <div class="about-image-border"></div>
+            </div>
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p style="font-size:larger;">
-              I am Priyanshu Sharma, a Computer Science Engineering (CSE) student pursuing a Bachelor of Technology (B.Tech) degree. In addition to my academic pursuits, I am also a passionate web developer. I possess a strong affinity for creating websites and continuously strive to expand my knowledge by learning about new and emerging technologies in the field. I have worked on many interesting websites which you can go through as follows.
-              <br>
-              Furthermore, I am an avid competitive programmer, achieving a 4-star rating on HackerRank and a 2.5-star rating on LeetCode. This reflects my dedication to problem-solving and honing my coding skills in a competitive environment.
+            <p class="about-description">
+              <strong>DevSphere</strong> is a freelancing collective of skilled developers, designers, and digital creators. We specialize in building high-performance websites, cross-platform mobile applications, and delivering end-to-end digital solutions.
             </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Web Development</span><br />HTML, CSS, JAVASCRIPT, REACT
-                  JS, PHP
-                </li>
-                <li>
-                  <span>Competitive Programming</span><br />JAVA, C, C++ (DSA)
-                </li>
-                <li><span>Open source Contributor</span><br />GIT, GITHUB</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2022</span><br />WEB DESIGNING AND FRONTEND DEVELOPMENT
-                  AT ACTIBEWEB
-                </li>
-                <li>
-                  <span>2022</span><br />OPEN SOURCE CONTRIBUTOR AS WELL AS
-                  MENTOR IN HACKTOBERFEST
-                </li>
-                <li>
-                  <span>2021</span><br />OPEN SOURCE CONTRIBUTOR IN
-                  HACKTOBERFEST
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>10th marks (ICSE)</span><br /><p style="font-size: 20px;">overall percentage: 84.6%</p>
-                </li>
-                <li>
-                  <span>12th marks (CBSE)</span><br /><p style="font-size: 20px;">overall percentage: 82.6%</p>
-                </li>
-                <li><span>B.Tech (MAKAUT)</span><br /><p style="font-size: 20px;"></p>overall CGPA: 9.2</li></p>
-              </ul>
+            <p class="about-description">
+              Our team combines technical expertise with creative vision to deliver projects that not only look stunning but perform exceptionally. From startups to established businesses, we help brands establish a powerful digital presence.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-rocket"></i>
+                <div>
+                  <h4>Fast Delivery</h4>
+                  <p>Quick turnaround without compromising quality</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h4>Clean Code</h4>
+                  <p>Modern, scalable, and maintainable solutions</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                  <h4>24/7 Support</h4>
+                  <p>Dedicated support throughout and after the project for 1 month</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- -------------services------------- -->
-
-
-
-
-
-    <div id="Certifications">
+    <!-- -------------services / skills------------- -->
+    <div id="services">
       <div class="container">
-        <h1 class="sub-title">My Certifications</h1>
-
-        <div class="work-list">
-          <div class="work">
-            <img src="images/hackerrnak basic problem.png" alt="" />
-
-            <div class="layer">
-              <h3>Problem Solving (Basic) Certificate
-              </h3>
-              <p>
-                It is certificate of basic problem solving in coding at hackerrank!
-              </p>
-                <a href="https://www.hackerrank.com/certificates/d1fd0655d443" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-             
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/java.png" alt="" />
-            <div class="layer">
-              <h3>Java Programming</h3>
-              <p>Java Programming: Solving Problems with Software certification!</p>
-              <a
-                href="https://www.coursera.org/account/accomplishments/verify/SXBKWYQFVXCQ"
-                target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/python.png" alt="" />
-            <div class="layer">
-              <h3>Python Certifications</h3>
-              <p>
-               It is a coursera certificate of Programming for Everybody (Getting Started with Python)!
-              </p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/VPV375C4DANZ" target="_blank"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-
-
-  
-   
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h1 class="sub-title">Our Skills & Services</h1>
         </div>
-        <!-- <a href="#" class="btn">See more</a> -->
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom websites, landing pages, e-commerce stores, and web applications built with modern technologies like React, Next.js, and more.</p>
+            <div class="service-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>.Net</span>
+              <span>Angular</span>
+              <span>React</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>App Development</h3>
+            <p>Native and cross-platform mobile applications for iOS and Android that deliver seamless user experiences and drive engagement.</p>
+            <div class="service-tags">
+              <span>React Native</span>
+              <span>Flutter</span>
+              <span>Android</span>
+              <span>iOS</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3>Content Creation</h3>
+            <p>Engaging, high-quality content that tells your brand story, drives traffic, and converts visitors into customers.</p>
+            <div class="service-tags">
+              <span>Copywriting</span>
+              <span>Blog Posts</span>
+              <span>Social Media</span>
+              <span>Video</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <h3>Logo Generation</h3>
+            <p>Unique, memorable logo designs and complete brand identity packages that make your business stand out from the competition.</p>
+            <div class="service-tags">
+              <span>Logo Design</span>
+              <span>Branding</span>
+              <span>Visual Identity</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>SEO</h3>
+            <p>Data-driven search engine optimization strategies to boost your visibility, increase organic traffic, and improve search rankings.</p>
+            <div class="service-tags">
+              <span>On-Page SEO</span>
+              <span>Technical SEO</span>
+              <span>Analytics</span>
+              <span>Keyword Research</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- ---------------portfolio------------------>
-
-
-    <div id="portfolio" style="padding-top: 120px;">
+    <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My works</h1>
-
+        <div class="section-header">
+          <span class="section-tag">Our Portfolio</span>
+          <h1 class="sub-title">Recent Projects</h1>
+        </div>
         <div class="work-list">
           <div class="work">
-            <img src="images/realestate.png" alt="" />
-
+            <img src="images/realestate.png" alt="Real Estate Website" />
             <div class="layer">
-              <h3>Real estate website</h3>
-              <p>
-                It is a kind of realestate website which shows properties and
-                their prices!
-              </p>
-                <a href="https://65140f1651d2c90a8ae5749d--glowing-jelly-453c05.netlify.app/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-             
+              <h3>Real Estate Platform</h3>
+              <p>A property listing website with advanced search and filtering for real estate businesses.</p>
+              <a href="https://65140f1651d2c90a8ae5749d--glowing-jelly-453c05.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/kfc.png" alt="" />
+            <img src="images/kfc.png" alt="KFC Franchise Website" />
             <div class="layer">
-              <h3>Franchise website</h3>
-              <p>It is a KFC franchise demo website!</p>
-              <a
-                href="https://celebrated-lamington-4db25e.netlify.app/"
-                target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <h3>Franchise Website</h3>
+              <p>A franchise demo website with menu display, location finder, and ordering UI.</p>
+              <a href="https://celebrated-lamington-4db25e.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
-
-
           <div class="work">
-            <img src="images/cement.png" alt="" />
+            <img src="images/cement.png" alt="Cement Traders Website" />
             <div class="layer">
-              <h3>Cement Traders website</h3>
-              <p>
-                It is a online website for ordering cement of any xyz company
-                cement through online!
-              </p>
-              <a href="https://65193d7cfe7ae23774f1340b--glistening-snickerdoodle-a9ef85.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              <h3>E-Commerce Platform</h3>
+              <p>An online ordering platform for a cement trading business with product catalog.</p>
+              <a href="https://65193d7cfe7ae23774f1340b--glistening-snickerdoodle-a9ef85.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
-
           <div class="work">
-            <img src="images/ayurveda.png" alt="" />
+            <img src="images/ayurveda.png" alt="Ayurveda Website" />
             <div class="layer">
-              <h3>Ayurveda Treatment website</h3>
-              <p>
-                It is a website that advertises herbal and natural medical
-                products!
-              </p>
-              <a
-                href="https://650f35465b79915f0852229e--prismatic-meerkat-e5f97d.netlify.app/#"
-                target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <h3>Healthcare Website</h3>
+              <p>A website for herbal and natural medical products with an elegant, clean design.</p>
+              <a href="https://650f35465b79915f0852229e--prismatic-meerkat-e5f97d.netlify.app/#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
-
           <div class="work">
-            <img src="images/music.png" alt="" />
+            <img src="images/music.png" alt="Music Website" />
             <div class="layer">
-              <h3>Music Website</h3>
-              <p>It is a spotify clone website to enjoy songs!</p>
-              <a href="https://celadon-faun-45bcf6.netlify.app/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <h3>Music Streaming App</h3>
+              <p>A Spotify-inspired music streaming interface with playlist management.</p>
+              <a href="https://celadon-faun-45bcf6.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
-
           <div class="work">
-            <img src="images/weather.png" alt="" />
+            <img src="images/weather.png" alt="Weather App" />
             <div class="layer">
-              <h3>Weather Forecast website</h3>
-              <p>
-                This is a website that displays the weather conditions for all
-                locations in India!
-              </p>
-              <a
-                href="https://sparkling-panda-7857c3.netlify.app/"
-                target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="work">
-            <img src="images/tic tac.png" alt="" />
-            <div class="layer">
-              <h3>Tic Tac Toe game</h3>
-              <p>
-                Its a simple code for playing tic tac toe game against computer
-                using java!
-              </p>
-              <a
-                href="https://github.com/Priyanshu-792/Tic-tac-toe-"
-                target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <h3>Weather Forecast App</h3>
+              <p>A weather application displaying real-time conditions for locations across India.</p>
+              <a href="https://sparkling-panda-7857c3.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
         </div>
-        <a href="https://leetcode.com/priyanshusharma72002/" target="_blank" class="btn">See more</a>
+        <a href="#contact" class="btn btn-outline" style="margin-top: 40px;">Want something similar? Let's talk <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
-
-
-
-
 
     <!-- ----------------contact---------------->
     <div id="contact">
       <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h1 class="sub-title">Let's Work Together</h1>
+        </div>
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact me</h1>
-            <p>
-              
-           
-            <a href="mailto:priyanshusharma72002@gmail.com" >
-              <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
-              priyanshusharma72002@gmail.com
-            </a> 
-            </p>
-            <p><i class="fa-solid fa-phone"></i>7001595836</p>
-            <div class="social-icons">
-              <a href="https://www.instagram.com/priyanshu_792/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://github.com/Priyanshu-792" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-             
-              <a
-                href="https://www.linkedin.com/in/priyanshu-sharma-552104239/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+            <p class="contact-intro">Have a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you within 24 hours.</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="contact-label">Email Us</span>
+                  <a href="mailto:professionaluse0509@gmail.com">professionaluse0509@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="contact-label">Call Us</span>
+                  <a href="tel:7001595836">+91 7001595836</a>
+                   <a href="tel:7029286271">/ +91 7029286271</a>
+                </div>
+              </div>
             </div>
-            <a href="images/resume.pdf" download class="btn btn2"
-              >Download Resume</a
-            >
+            <div class="social-icons">
+              <a href="https://www.instagram.com/priyanshu_792/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/Priyanshu-792" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/priyanshu-sharma-552104239/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
           </div>
           <div class="contact-right">
-            Please leave a comment or any message you want to convey to me via this message box!
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="Submit" class="btn btn2">Submit</button>
+            <form id="contact-form">
+              <div class="form-group">
+                <input type="text" name="from_name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" name="reply_to" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" name="contact_number" placeholder="Your Contact Number (e.g., +91 9876543210)" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Project Type (e.g., Website, App, Logo)" />
+              </div>
+              <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
             </form>
-            <span id="msg"> </span>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
       <div class="copyright">
-        <p>
-         Made by Priyanshu Sharma 😊
-         <i class="fa-solid fa-laptop-mobile" ></i>
-        </p>
+        <div class="container">
+          <div class="footer-content">
+            <p class="footer-brand">DevSphere &copy; 2024</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <script>
-      // -----------about section starts here----------
+      // Smooth reveal on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
 
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
+      document.querySelectorAll('.service-card, .work, .contact-item, .highlight-item, .about-col-1, .about-col-2').forEach(el => {
+        el.classList.add('reveal');
+        observer.observe(el);
+      });
+
+      // Cursor glow effect
+      const cursorGlow = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+      });
+
+      // Particle background
+      function createParticles() {
+        const container = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement('div');
+          particle.classList.add('particle');
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.top = Math.random() * 100 + '%';
+          particle.style.animationDelay = Math.random() * 6 + 's';
+          particle.style.animationDuration = (Math.random() * 4 + 3) + 's';
+          container.appendChild(particle);
         }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+      }
+      createParticles();
+
+      // Counter animation
+      function animateCounters() {
+        document.querySelectorAll('.stat-number').forEach(counter => {
+          const target = parseInt(counter.textContent);
+          const suffix = counter.textContent.replace(/[0-9]/g, '');
+          let current = 0;
+          const increment = target / 60;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.textContent = target + suffix;
+              clearInterval(timer);
+            } else {
+              counter.textContent = Math.floor(current) + suffix;
+            }
+          }, 30);
+        });
       }
 
-      // -----------about section ends here-----------
+      // Run counter animation when header stats are visible
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      });
+      const headerStats = document.querySelector('.header-stats');
+      if (headerStats) statsObserver.observe(headerStats);
     </script>
 
     <script>
-      var sidemenu = document.getELementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
       function openmenu() {
         sidemenu.style.right = "0";
       }
       function closemenu() {
-        sidemenu.style.right = "-200px";
+        sidemenu.style.right = "-300px";
       }
     </script>
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzif_lVHcE9tv-FaRQQzNwZCWxcp1ANEKLD7i_xzRd4mOzHqmE_qbdlINok3u2CXSJE/exec";
-      const form = document.forms["submit-to-google-sheet"];
+      // =============================================
+      // EmailJS Integration
+      // =============================================
+      // SETUP STEPS (do these once on https://www.emailjs.com):
+      //
+      // 1. Create a FREE account at https://www.emailjs.com
+      // 2. Go to "Email Services" → Add Service → choose Gmail
+      //    → Connect your Gmail (professionaluse0509@gmail.com)
+      //    → Copy the SERVICE ID (e.g. "service_xxxxxxx")
+      //
+      // 3. Go to "Email Templates" → Create New Template
+      //    → Set "To Email" as: professionaluse0509@gmail.com
+      //    → Use these variables in your template:
+      //        Subject: New inquiry from {{from_name}} - {{subject}}
+      //        Body:
+      //          Name: {{from_name}}
+      //          Email: {{reply_to}}
+      //          Project Type: {{subject}}
+      //          Message: {{message}}
+      //    → Save and copy the TEMPLATE ID (e.g. "template_xxxxxxx")
+      //
+      // 4. Go to "Account" → Copy your PUBLIC KEY (e.g. "XXXXXXXXXXXXXXX")
+      //
+      // 5. Replace the 3 placeholders below with your actual IDs:
+      // =============================================
+
+      emailjs.init("XU5XsFQSRGGAoz3h0");
+
+      const contactForm = document.getElementById("contact-form");
       const msg = document.getElementById("msg");
-      form.addEventListener("submit", (e) => {
+
+      contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully!";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
+
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+        btn.disabled = true;
+
+        emailjs.sendForm(
+          "service_gfi5f3m",
+          "template_m22qbfm",
+          contactForm
+        )
+        .then(() => {
+          msg.innerHTML = "✓ Message sent successfully! We'll get back to you soon.";
+          msg.style.color = "#00cec9";
+          contactForm.reset();
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+        })
+        .catch((error) => {
+          msg.innerHTML = "✗ Something went wrong. Please try again.";
+          msg.style.color = "#ff6b6b";
+          console.error("EmailJS Error:", error);
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+        })
+        .finally(() => {
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        });
       });
     </script>
 
+    <!-- Nav active state on scroll -->
+    <script>
+      const sections = document.querySelectorAll('div[id]');
+      const navLinks = document.querySelectorAll('nav ul li a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+
+        // Navbar background on scroll
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 100) {
+          nav.classList.add('nav-scrolled');
+        } else {
+          nav.classList.remove('nav-scrolled');
+        }
+      });
+    </script>
+
+    <!-- Splash screen controller -->
+    <script>
+      window.addEventListener('load', () => {
+        const splash = document.getElementById('splash');
+        // Prevent scroll while splash is showing
+        document.body.style.overflow = 'hidden';
+        // After animation completes (~3s), fade out and remove
+        setTimeout(() => {
+          splash.classList.add('splash-done');
+          document.body.style.overflow = '';
+        }, 3000);
+        // Remove from DOM after fade-out transition
+        setTimeout(() => {
+          splash.remove();
+        }, 3800);
+      });
+    </script>
   </body>
 </html>
