@@ -424,6 +424,10 @@
       function closemenu() {
         sidemenu.style.right = "-300px";
       }
+      // Close menu when any nav link is clicked
+      document.querySelectorAll('#sidemenu li a').forEach(link => {
+        link.addEventListener('click', closemenu);
+      });
     </script>
     <script>
       // =============================================
